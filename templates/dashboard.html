@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <style>
+    body { font-family: Arial; background: #ddf; padding: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h2>Welcome {{ user.first_name }} {{ user.last_name }}</h2>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Phone:</strong> {{ user.phone }}</p>
+  <p><strong>Date of Birth:</strong> {{ user.dob }}</p>
+  <br>
+  <a href="/logout">Logout</a>
+</body>
+</html>
